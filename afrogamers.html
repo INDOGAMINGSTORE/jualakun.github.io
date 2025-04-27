@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Toko Game Digital</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .product-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      width: 220px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product-card h3 {
+      margin: 10px 0 5px;
+    }
+
+    .deskripsi {
+      font-size: 14px;
+      color: #555;
+      margin: 8px 0;
+      min-height: 40px;
+    }
+
+    .harga {
+      font-weight: bold;
+      color: #28a745;
+      margin: 5px 0;
+    }
+
+    button {
+      background: #28a745;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #218838;
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #ddd;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>INDOGAMINGSTORE</h1>
+  </header>
+
+  <main class="product-grid">
+    <!-- Game #1 -->
+    <div class="product-card">
+      <img src="Screenshot 2025-04-27 075353.png" alt="Minecraft TLauncher">
+      <h3>Akun Gratis Minecraft TLauncher</h3>
+      <p class="deskripsi">Nikmati Minecraft tanpa biaya lisensi dengan TLauncher. Cocok untuk pemula.</p>
+      <p class="harga">Rp 25.000</p>
+      <button onclick="beli('Akun Gratis Minecraft TLauncher')">Beli</button>
+    </div>  
+  <script>
+    function beli(namaGame) {
+      const linkWhatsApp = `https://wa.me/6283822691295?text=Halo,%20saya%20ingin%20membeli%20${encodeURIComponent(namaGame)}`;
+      window.open(linkWhatsApp, '_blank');
+    }
+  </script>
+</body>
+</html>
