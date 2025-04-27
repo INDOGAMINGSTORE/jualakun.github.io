@@ -1,1 +1,0 @@
-# jualakun.github.io
